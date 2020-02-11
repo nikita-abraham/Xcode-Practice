@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,80 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Xcode_Practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="DQb-Ju-KUb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7j-sN-Kqw" userLabel="SecondButton">
+                                <rect key="frame" x="45" y="378" width="285" height="69"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Sign in with Google" backgroundImage="Google">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSf-B5-2c6" userLabel="ThirdButton">
+                                <rect key="frame" x="45" y="457" width="285" height="69"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Sign in with Email" backgroundImage="Email">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login or Create an Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Qg-wS-hNF">
+                                <rect key="frame" x="83.5" y="268" width="208" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social Squid" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slu-YF-6Hr">
+                                <rect key="frame" x="128" y="117.5" width="119.5" height="120.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETF-4t-eje" userLabel="FirstButton">
+                                <rect key="frame" x="45" y="299" width="285" height="69"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Sign in with Facebook" backgroundImage="FB">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="slu-YF-6Hr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Mu-0s-V06"/>
+                            <constraint firstItem="DQb-Ju-KUb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4Gn-VH-zvO"/>
+                            <constraint firstItem="9Qg-wS-hNF" firstAttribute="top" secondItem="slu-YF-6Hr" secondAttribute="bottom" constant="30" id="5NQ-qt-l5l"/>
+                            <constraint firstAttribute="bottom" secondItem="DQb-Ju-KUb" secondAttribute="bottom" id="99M-jA-fts"/>
+                            <constraint firstItem="SSf-B5-2c6" firstAttribute="top" secondItem="B7j-sN-Kqw" secondAttribute="bottom" constant="10" id="GpA-bW-GI3"/>
+                            <constraint firstItem="9Qg-wS-hNF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pmh-z1-QPM"/>
+                            <constraint firstItem="ETF-4t-eje" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uey-no-kiU"/>
+                            <constraint firstItem="SSf-B5-2c6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xtv-0Y-9o7"/>
+                            <constraint firstAttribute="trailing" secondItem="DQb-Ju-KUb" secondAttribute="trailing" id="Zkb-4r-CNt"/>
+                            <constraint firstItem="B7j-sN-Kqw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d69-7y-oVT"/>
+                            <constraint firstItem="ETF-4t-eje" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jsk-9k-OnF"/>
+                            <constraint firstItem="ETF-4t-eje" firstAttribute="top" secondItem="9Qg-wS-hNF" secondAttribute="bottom" constant="10" id="phb-6x-vZI"/>
+                            <constraint firstItem="B7j-sN-Kqw" firstAttribute="top" secondItem="ETF-4t-eje" secondAttribute="bottom" constant="10" id="qvk-uR-DwX"/>
+                            <constraint firstItem="DQb-Ju-KUb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wzT-Os-OOb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="135.9375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Background" width="414" height="896"/>
+        <image name="Email" width="285" height="69"/>
+        <image name="FB" width="285" height="69"/>
+        <image name="Google" width="285" height="69"/>
+    </resources>
 </document>
